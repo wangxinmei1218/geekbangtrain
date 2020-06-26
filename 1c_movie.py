@@ -31,10 +31,11 @@ print(f'评分：{rating}')
 mylist = [film_name, plan_date, rating]
 
 
+
 import pandas as pd
 
 movie1 = pd.DataFrame(data = mylist)
 
 # windows需要使用gbk字符集
-movie1.to_csv('./movie1.csv', encoding='utf8', index=False, header=False)
+movie1.to_csv('./movie1.csv', encoding='GKB', index=False, header=False)
 
